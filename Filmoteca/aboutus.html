@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  .fa {
+    padding: 15px;
+    font-size: 18px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 10px;
+    margin-top: 90px;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .container-fa{
+    margin-left: 1120px;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #FCAF45;
+    color: white;
+  }
+
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+  #target div {
+  opacity: 0;
+  animation: fade-in 2s forwards;
+}
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  </style>
+</head>
+<body background="film2.jpg">
+  <div class="container">
+    <nav>
+      <div class="logo">
+        <a href="index.html">Film<span>oteca</span></a>
+      </div>
+      <div class="buttons">
+        <a href="index.html" class="btn">Home</a>
+      </div>
+    </nav>
+  <section class="containerabout">
+    <center>
+    <div class="inner" id="target">
+    <br>
+    <h2> About Filmoteca </h2>
+    <br>
+    <br>
+    <p><b> Why did I choose to make an online library... of movies? </b></p>
+    <br>
+    <p> My idea of making an online library of movies was born from inconvenience. I hated the times I wanted to watch a movie and didn't know what to watch, especially when I started looking for the most watched movies or the most liked movies on the internet, because, often, they were not the same.
+    </p>
+    <br>
+    <p>Therefore, with Filmoteca I wanted to bring as much information as possible about the movies which appeared in the last four decades, so that when someone wants to look for a film to watch, they will have all the information in the same place.
+    </p>
+    </div>
+    </center>
+  </section>
+  <div class="container-fa">
+  <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+  <a href="https://www.gmail.com" class="fa fa-google"></a>
+  <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+  </div>
+  </div>
+
+
+  <script>
+    const target = document.getElementById('target');
+    const newInnerHTML = target.innerHTML.split(/<br><br>\s*/i).map((text, i) => '<div style="animation-delay:' + 
+    (400 * i) + 'ms">' + text + '</div>')
+    .join(''); 
+
+    target.innerHTML = newInnerHTML;
+  </script>
+</body>
+</html>
