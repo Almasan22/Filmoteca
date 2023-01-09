@@ -39,6 +39,7 @@
         <li class="dropdown">
           <button class="dropbtn">Filmoteca</button>
             <div class="dropdown-content">
+              <a href="search.html">Search movies</a>
               <a href="ideas.html">Browse movies by genre</a>
               <a href="ideasyears.html">Browse movies by years</a>
             </div>
@@ -57,10 +58,10 @@
     <table class="table">
     <thead>
       <tr>
-        <th style="text-align:left"> <h3> Title </h3> </th>
-        <th style="text-align:left"> <h3> Year </h3></th>
-        <th style="text-align:left"> <h3> Director </h3></th>
-        <th style="text-align:left"> <h3> Rating </h3></th>
+        <th style="text-align:left" class="movies"> <h3> Title </h3> </th>
+        <th style="text-align:left" class="movies"> <h3> Year </h3></th>
+        <th style="text-align:left" class="movies"> <h3> Director </h3></th>
+        <th style="text-align:left" class="movies"> <h3> Rating </h3></th>
       </tr>
     </thead>
 

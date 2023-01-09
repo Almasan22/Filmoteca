@@ -15,7 +15,14 @@
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="ideas.html">Filmoteca</a></li>
+        <li class="dropdown">
+          <button class="dropbtn">Filmoteca</button>
+            <div class="dropdown-content">
+              <a href="search.html">Search movies</a>
+              <a href="ideas.html">Browse movies by genre</a>
+              <a href="ideasyears.html">Browse movies by years</a>
+            </div>
+        </li>
         <li><a href="statistics.html">Statistics</a></li>
       </ul>
       <div class="buttons">

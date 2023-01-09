@@ -4,7 +4,7 @@
         // username => root
         // password => empty
         // database name => newsletter
-        $conn = mysqli_connect("localhost", "root", "", "newsletter");
+        $conn = mysqli_connect("localhost", "root", "", "proiect individual");
          
         // Check connection
         if($conn === false){
